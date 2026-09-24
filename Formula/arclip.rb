@@ -2,27 +2,27 @@
 class Arclip < Formula
   desc "Build AR scenes with the AI agent you already use"
   homepage "https://arclip.design/cli"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     on_arm do
-      url "https://cdn-aws.arclip.app/libs/cli/0.1.2/arclip-0.1.2-darwin-arm64.tar.gz"
-      sha256 "27e7ed5606640ec5f0468edbb6a91843e4fb3243818365cd4b84b63201cfec95"
+      url "https://cdn-aws.arclip.app/libs/cli/0.1.3/arclip-0.1.3-darwin-arm64.tar.gz"
+      sha256 "7e781fdff9b28fa5a94d35d66dcae329ca3f9f0a4acc470b14b9a18c6384a5ff"
     end
     on_intel do
-      url "https://cdn-aws.arclip.app/libs/cli/0.1.2/arclip-0.1.2-darwin-x64.tar.gz"
-      sha256 "0afde3006f9b43153fb124b30df511792e1829994bb997651f9103b8e1e0f1d2"
+      url "https://cdn-aws.arclip.app/libs/cli/0.1.3/arclip-0.1.3-darwin-x64.tar.gz"
+      sha256 "bdf9069e9e04a28f4f4a89497de40b0d75d8ffcb1712d734c3742a48d2ea9a38"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://cdn-aws.arclip.app/libs/cli/0.1.2/arclip-0.1.2-linux-arm64.tar.gz"
-      sha256 "1f03c66abc09854325e5f2c4835bb291a210639503a903436f3ebf92e2cee347"
+      url "https://cdn-aws.arclip.app/libs/cli/0.1.3/arclip-0.1.3-linux-arm64.tar.gz"
+      sha256 "003b47461ae113da9dc73e3f4d6d236cb65891a1a392e87d72279360341740ea"
     end
     on_intel do
-      url "https://cdn-aws.arclip.app/libs/cli/0.1.2/arclip-0.1.2-linux-x64.tar.gz"
-      sha256 "c18cd611368d69737b54ce85d2582c7a60c01176e374440ad1154d9882364e9c"
+      url "https://cdn-aws.arclip.app/libs/cli/0.1.3/arclip-0.1.3-linux-x64.tar.gz"
+      sha256 "cb928e3ff4b2ef1e8049b83d34e153fa28d21139bf81d0368c636dbaa39fdda1"
     end
   end
 
