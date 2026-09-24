@@ -1,0 +1,24 @@
+name: Install
+
+# Installs the formula the way a user would, on both systems it supports.
+on:
+  push:
+    paths: ['Formula/**', '.github/workflows/test.yml']
+  workflow_dispatch:
+
+jobs:
+  install:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: brew install
+        run: |
+          eval "$($(command -v brew || echo /home/linuxbrew/.linuxbrew/bin/brew) shellenv)"
+          brew tap webar-studio/tap "$GITHUB_WORKSPACE"
+          brew install webar-studio/tap/arclip
+          arclip --version
+          brew test webar-studio/tap/arclip
