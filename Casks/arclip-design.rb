@@ -1,7 +1,7 @@
 # Written by apps/desktop/scripts/homebrew.ts on every arclip.design release; edits here are overwritten.
 cask "arclip-design" do
-  version "0.1.0"
-  sha256 "4c617ed88c4bd6b91bd3e65cdac04a488b2368cc7df1e45ab0c2b7b1ebf085e5"
+  version "0.1.1"
+  sha256 "f883364f528375fa3dcbf2c113b31491c57fae70b8008c6029b5571f5b515f55"
 
   url "https://cdn-aws.arclip.app/libs/desktop/#{version}/arclip-design-#{version}-mac.dmg"
   name "arclip.design"
